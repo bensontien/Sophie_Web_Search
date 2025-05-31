@@ -1,0 +1,9 @@
+services:
+  sophie_web_search_api:
+    container_name: sophie_web_search_api
+    image: localhost/sophie_web_search_api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - "8818:8818"
