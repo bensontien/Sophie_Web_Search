@@ -11,6 +11,8 @@ WORKDIR /app
 COPY . /app
 
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN playwright install-deps
+RUN playwright install
 
 EXPOSE 8818
 
